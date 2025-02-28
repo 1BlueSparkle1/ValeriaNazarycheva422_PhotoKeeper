@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhotoKeeper.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,37 @@ namespace PhotoKeeper.Pages
         public AuthorizationPage()
         {
             InitializeComponent();
+        }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void EntranceBtn_Click(object sender, RoutedEventArgs e)
+        {
+            IEnumerable<User> users = App.db.User.ToList();
+            User thisUser = new User();
+            foreach (User user in users)
+            {
+                if (user.Login == LoginTb.Text)
+                {
+                    if (user.Password == PasswordPb.Password)
+                    {
+                        thisUser = user;
+                    }
+                }
+            }
+            if (thisUser.Id == 0)
+            {
+                MessageBox.Show("Пользователь не найден!");
+            }
+            else
+            {
+                MessageBox.Show("Вы вошли!");
+                Navigations.mainPage(new NonePage());
+            }
+
         }
     }
 }

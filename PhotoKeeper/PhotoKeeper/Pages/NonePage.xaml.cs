@@ -1,6 +1,4 @@
-﻿using PhotoKeeper.Components;
-using PhotoKeeper.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,18 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PhotoKeeper
+namespace PhotoKeeper.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для NonePage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class NonePage : Page
     {
-        public MainWindow()
+        public NonePage()
         {
             InitializeComponent();
-            Navigations.mainWindow = this;
-            Navigations.mainPage(new AuthorizationPage());
         }
     }
 }

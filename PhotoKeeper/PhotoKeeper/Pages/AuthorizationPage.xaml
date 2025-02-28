@@ -5,10 +5,26 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:PhotoKeeper.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="1000"
       Title="AuthorizationPage">
 
     <Grid>
-        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+            <TextBlock  FontSize="36" Margin="80">Хранитель фотографий</TextBlock>
+
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center" FontSize="24">Авторизация</TextBlock>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock>Логин:</TextBlock>
+                    <TextBox x:Name="LoginTb"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>Пароль:</TextBlock>
+                    <PasswordBox x:Name="PasswordPb"></PasswordBox>
+                </StackPanel>
+                <Button x:Name="EntranceBtn" Click="EntranceBtn_Click">Войти</Button>
+                <Button x:Name="ExitBtn" Click="ExitBtn_Click">Выйти</Button>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>
