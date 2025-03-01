@@ -64,7 +64,7 @@ namespace PhotoKeeper.Pages
             }
             if (AuthorCb.SelectedIndex > 0)
             {
-                photo_Pets = photo_Pets.Where(x => x.Photo.User.Login == AuthorCb.Text);
+                photo_Pets = photo_Pets.Where(x =>x.Photo.UserId != null && x.Photo.UserId == AuthorCb.SelectedIndex);
             }
             photo_Pets = photo_Pets.Where(x => x.Photo.Description.ToLower().Contains(SerchTb.Text.ToLower()));
 
@@ -73,6 +73,16 @@ namespace PhotoKeeper.Pages
             {
                 PhotoWp.Children.Add(new PhotoUserControl(photo.Photo));
             }
+        }
+
+        private void SerchTb_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Refresh();
+        }
+
+        private void AuthorCb_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Refresh();
         }
     }
 }
