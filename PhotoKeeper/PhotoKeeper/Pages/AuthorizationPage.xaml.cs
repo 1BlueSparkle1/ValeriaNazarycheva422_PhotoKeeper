@@ -56,6 +56,7 @@ namespace PhotoKeeper.Pages
                 App.thisUser = thisUser;
                 Navigations.leftPage(new LeftProfilePage());
                 Navigations.topPage(new TitlePage());
+                Navigations.valuePage(new ListImagePage());
             }
 
         }

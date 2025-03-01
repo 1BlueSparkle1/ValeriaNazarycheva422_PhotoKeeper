@@ -10,6 +10,6 @@
 
     <Grid>
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,100,5" FontSize="48">Photo keeper</TextBlock>
-        <Button HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20">Добавить</Button>
+        <Button x:Name="AddBtn" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20" Click="AddBtn_Click">Добавить</Button>
     </Grid>
 </Page>

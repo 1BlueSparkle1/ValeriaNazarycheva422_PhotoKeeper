@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace PhotoKeeper.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для TitlePage.xaml
+    /// Логика взаимодействия для AddPhotoPage.xaml
     /// </summary>
-    public partial class TitlePage : Page
+    public partial class AddPhotoPage : Page
     {
-        public TitlePage()
+        public AddPhotoPage()
         {
             InitializeComponent();
-        }
-
-        private void AddBtn_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
