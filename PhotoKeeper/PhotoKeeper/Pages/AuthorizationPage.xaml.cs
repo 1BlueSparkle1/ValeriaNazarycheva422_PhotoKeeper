@@ -53,6 +53,9 @@ namespace PhotoKeeper.Pages
             {
                 MessageBox.Show("Вы вошли!");
                 Navigations.mainPage(new NonePage());
+                App.thisUser = thisUser;
+                Navigations.leftPage(new LeftProfilePage());
+                Navigations.topPage(new TitlePage());
             }
 
         }

@@ -1,8 +1,5 @@
-﻿using PhotoKeeper.Components;
-using PhotoKeeper.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,18 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PhotoKeeper
+namespace PhotoKeeper.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для TitlePage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TitlePage : Page
     {
-        public MainWindow()
+        public TitlePage()
         {
             InitializeComponent();
-            Navigations.mainWindow = this;
-            Navigations.mainPage(new AuthorizationPage());
         }
     }
 }

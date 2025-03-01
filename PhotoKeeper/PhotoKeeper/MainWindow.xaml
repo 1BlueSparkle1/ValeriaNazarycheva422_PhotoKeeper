@@ -12,17 +12,17 @@
             <ColumnDefinition Width="749*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="247*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="519*"/>
         </Grid.RowDefinitions>
 
-        <Frame x:Name="MainFrame" Grid.ColumnSpan="2" Grid.RowSpan="2"></Frame>
+        <Frame x:Name="MainFrame" Grid.ColumnSpan="2" Grid.RowSpan="2" NavigationUIVisibility="Hidden"></Frame>
 
-        <Frame x:Name="TopFrame" Grid.ColumnSpan="2"></Frame>
+        <Frame x:Name="TopFrame" Grid.Column="1" NavigationUIVisibility="Hidden"></Frame>
 
-        <Frame x:Name="LeftFrame" Grid.Row="1"></Frame>
+        <Frame x:Name="LeftFrame" Grid.RowSpan="2" NavigationUIVisibility="Hidden"></Frame>
 
-        <Frame x:Name="ValueFrame" Grid.Row="1" Grid.Column="1"></Frame>
-        
+        <Frame x:Name="ValueFrame" Grid.Row="1" Grid.Column="1" NavigationUIVisibility="Hidden" Margin="0,7,0,0"></Frame>
+
     </Grid>
 </Window>

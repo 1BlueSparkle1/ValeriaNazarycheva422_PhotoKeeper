@@ -1,0 +1,23 @@
+﻿<Page x:Class="PhotoKeeper.Pages.LeftProfilePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PhotoKeeper.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="300"
+      Title="LeftProfilePage">
+
+    <Grid Background="#FFF0FFC6">
+        <StackPanel Margin="10">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Имя:</TextBlock>
+                <TextBlock x:Name="NameTb"></TextBlock>
+            </StackPanel>
+            <Image x:Name="LogoImg"></Image>
+            <TextBlock>Показаны фотографии по</TextBlock>
+            <TextBlock x:Name="PetTb"></TextBlock>
+        </StackPanel>
+        <Button x:Name="ExitBtn" VerticalAlignment="Bottom" Click="ExitBtn_Click">Выйти</Button>
+    </Grid>
+</Page>

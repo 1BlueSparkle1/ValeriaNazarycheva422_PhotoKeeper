@@ -114,7 +114,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\LeftProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ListImagePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\NonePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TitlePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,8 +135,17 @@
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\LeftProfilePage.xaml.cs">
+      <DependentUpon>LeftProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ListImagePage.xaml.cs">
+      <DependentUpon>ListImagePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\NonePage.xaml.cs">
       <DependentUpon>NonePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TitlePage.xaml.cs">
+      <DependentUpon>TitlePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -170,12 +191,20 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\photo_2025-03-01_02-51-01.jpg" />
+    <Resource Include="Resources\photo_2025-03-01_02-51-05.jpg" />
+    <Resource Include="Resources\photo_2025-03-01_02-51-07.jpg" />
+    <Resource Include="Resources\photo_2025-03-01_02-51-09.jpg" />
+    <Resource Include="Resources\photo_2025-03-01_02-51-11.jpg" />
+    <Resource Include="Resources\photo_2025-03-01_02-51-13.jpg" />
+    <Resource Include="Resources\photo_2025-03-01_02-51-15.jpg" />
+    <Resource Include="Resources\photo_2025-03-01_02-51-17.jpg" />
+    <Resource Include="Resources\photo_2025-03-01_02-51-20.jpg" />
+    <Resource Include="Resources\photo_2025-03-01_02-51-23.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,5 +15,6 @@ namespace PhotoKeeper
     public partial class App : Application
     {
         public static PhotoKeeperEntities db = new PhotoKeeperEntities();
+        public static User thisUser = new User();
     }
 }
