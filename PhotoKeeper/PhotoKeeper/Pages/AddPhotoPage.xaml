@@ -9,6 +9,18 @@
       Title="AddPhotoPage">
 
     <Grid>
-        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="EditImageBtn" Click="EditImageBtn_Click">
+                Изменить изображение
+            </Button>
+            <Image Height="100" Name="MainImage"></Image>
+            <ComboBox x:Name="PetCb">
+                <ComboBoxItem>Котенок Ра</ComboBoxItem>
+                <ComboBoxItem>Собачка Нуби</ComboBoxItem>
+                <ComboBoxItem>Оба</ComboBoxItem>
+            </ComboBox>
+            <TextBox x:Name="DescriptionTb"></TextBox>
+            <Button x:Name="SaveBtn" Click="SaveBtn_Click">Сохранить</Button>
+        </StackPanel>
     </Grid>
 </Page>

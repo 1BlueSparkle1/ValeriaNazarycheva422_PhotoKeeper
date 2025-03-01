@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhotoKeeper.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,7 @@ namespace PhotoKeeper.Pages
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Navigations.valuePage(new AddPhotoPage());
         }
     }
 }
